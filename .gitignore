@@ -21,3 +21,5 @@ sim_result*
 backtesting_*
 models/*.json
 models/*.html
+.vscode/*
+.vscode/constants.js

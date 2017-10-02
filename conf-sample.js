@@ -1,3 +1,4 @@
+import KEYS from './.vscode/constants'
 var c = module.exports = {}
 
 // mongo configuration
@@ -53,10 +54,10 @@ c.bitfinex.wallet = 'exchange'
 
 // to enable Bitstamp trading, enter your API credentials:
 c.bitstamp = {}
-c.bitstamp.key = 'YOUR-API-KEY'
-c.bitstamp.secret = 'YOUR-SECRET'
+c.bitstamp.key = KEYS.BIT_KEY
+c.bitstamp.secret = KEYS.BIT_SECRET
 // A client ID is required on Bitstamp
-c.bitstamp.client_id = 'YOUR-CLIENT-ID'
+c.bitstamp.client_id = KEYS.BIT_CLIENT_ID
 
 // to enable QuadrigaCX tranding, enter your API credentials:
 c.quadriga = {}
@@ -86,9 +87,9 @@ c.gemini.sandbox = true
 // sell if price drops below this % of bought price (0 to disable)
 c.sell_stop_pct = 0
 // buy if price surges above this % of sold price (0 to disable)
-c.buy_stop_pct = 0
+c.buy_stop_pct = 2
 // enable trailing sell stop when reaching this % profit (0 to disable)
-c.profit_stop_enable_pct = 0
+c.profit_stop_enable_pct = 5
 // maintain a trailing stop this % below the high-water mark of profit
 c.profit_stop_pct = 1
 
@@ -109,7 +110,7 @@ c.order_poll_time = 5000
 // ms to wait for settlement (after an order cancel)
 c.wait_for_settlement = 5000
 // % to mark up or down price for orders
-c.markup_pct = 0
+c.markup_pct = 0.25
 // become a market taker (high fees) or a market maker (low fees)
 c.order_type = 'maker'
 // when supported by the exchange, use post only type orders.
