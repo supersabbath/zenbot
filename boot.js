@@ -5,10 +5,12 @@ module.exports = function (cb) {
   var zenbot = require('./')()
   try {
     var c = require('./conf')
+    
   }
   catch (e) {
     c = {}
   }
+  
   var defaults = require('./conf-sample')
   Object.keys(defaults).forEach(function (k) {
     if (typeof c[k] === 'undefined') {
