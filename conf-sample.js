@@ -139,7 +139,6 @@ c.xmppon=0  // 0 xmpp disabled; 1 xmpp enabled (credentials should be correct)
 
 if (c.xmppon) {
 
-  c.xmpp = require('simple-xmpp');
 
   c.xmpp.connect({
                 jid                    : 'trader@domain.com', //xmpp account trader bot
