@@ -53,8 +53,10 @@ c.bitfinex.wallet = 'exchange'
 
 // to enable Bitstamp trading, enter your API credentials:
 c.bitstamp = {}
-
-
+c.bitfinex.key = 'YOUR-API-KEY'
+c.bitstamp = 'YOUR-SECRET'
+// A client ID is required on Bitstamp
+c.bitstamp.client_id = 'CLIENT_ID'
 // to enable QuadrigaCX tranding, enter your API credentials:
 c.quadriga = {}
 c.quadriga.key = 'YOUR-API-KEY';
